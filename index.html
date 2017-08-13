@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-select-1.12.4/dist/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap-select-1.12.4/dist/js/bootstrap-select.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script> -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://silviomoreto.github.io/bootstrap-select/css/base.css" rel="stylesheet">
+    <!-- <link href="https://silviomoreto.github.io/bootstrap-select/css/custom.css" rel="stylesheet"> -->
+    <!-- <link href="https://silviomoreto.github.io/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet"> -->
+
+    <style>
+        #aa {
+            width: 100%;
+            height: 500px;
+            margin: 0%;
+            background-image: url("img/hospital_search.jpg")
+        }
+    </style>
+</head>
+
+<body>
+    <div id="aa">
+        <div class="container">
+            <div>
+                <select class="selectpicker" id="prov">
+        <option>北京市</option>       
+        <option>天津市</option> 
+        <option>河北省</option> 
+        <option>山西省</option> 
+        <option>内蒙古自治区</option> 
+        <option>辽宁省</option> 
+        <option>吉林省</option> 
+        <option>黑龙江省</option> 
+        <option>上海市</option> 
+        <option>江苏省</option> 
+        <option>浙江省</option> 
+        <option>安徽省</option> 
+        <option>福建省</option> 
+        <option>江西省</option> 
+        <option>山东省</option> 
+        <option>河南省</option> 
+        <option>湖北省</option> 
+        <option>湖南省</option> 
+        <option>广东省</option> 
+        <option>广西壮族自治区</option> 
+        <option>海南省</option> 
+        <option>重庆市</option> 
+        <option>四川省</option> 
+        <option>贵州省</option> 
+        <option>云南省</option> 
+        <option>西藏自治区</option> 
+        <option>陕西省</option> 
+        <option>甘肃省</option> 
+        <option>青海省</option> 
+        <option>宁夏回族自治区</option> 
+        <option>新疆维吾尔自治区</option> 
+        </select>
+
+                <select class="selectpicker">
+        <option>广州市</option>
+        <option>深圳市</option>
+        <option>惠州市</option>
+        <option>赣州市</option>
+        </select>
+                <button type="button" class="btn btn-primary">Search</button>
+            </div>
+
+            <script>
+                var value = $('#prov').val()
+                console.log(value)
+                if (value === '广东省') $('.selectpicker').selectpicker('val', ['广州', '深圳', '惠州']);
+            </script>
+
+        </div>
+    </div>
+
+
+</body>
